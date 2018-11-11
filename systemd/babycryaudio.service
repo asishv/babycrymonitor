@@ -1,0 +1,10 @@
+[Unit]
+Description=Baby Cry Audio Service
+ 
+[Service]
+ExecStart=/home/pi/babycrymonitor/audio_server.py
+StandardOutput=null
+ 
+[Install]
+WantedBy=multi-user.target
+Alias=babycryaudio.service
